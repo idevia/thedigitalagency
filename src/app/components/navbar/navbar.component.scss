@@ -1,0 +1,21 @@
+.navbar-light {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: #000000;
+      }
+      &.active {
+        .nav-link {
+          // color: map-get($theme-colors, "primary");
+          color: #f270b6;
+        }
+      }
+      &:hover {
+        .nav-link {
+          // color: map-get($theme-colors, "primary");
+          color: #f270b6;
+        }
+      }
+    }
+  }
+}
