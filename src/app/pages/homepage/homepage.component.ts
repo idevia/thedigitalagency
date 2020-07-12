@@ -19,7 +19,7 @@ export class HomepageComponent implements OnInit {
       },
     },
     {
-      title: 'Websilte design',
+      title: 'Website design',
       tag: 'We’ll Take Care of That',
       description:
         'Looking for Website Design and Development services? Leave it to us. We know just what it takes to differentiate you from the crowded and competitive market in your specific industry. With our team of experts, no task is too large for us to accomplish. We are driven, dedicated, and will work tirelessly to get the results that you deserve.',
