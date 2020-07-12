@@ -6,10 +6,10 @@ import { ClientsComponent } from './pages/clients/clients.component';
 import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
-  { path: '', component: HomepageComponent },
+  { path: '', component: HomepageComponent, pathMatch: 'full' },
   { path: 'our-clients', component: ClientsComponent },
   { path: 'who-are-we', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact-us', component: ContactComponent },
 ];
 
 @NgModule({
