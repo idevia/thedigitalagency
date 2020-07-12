@@ -1,0 +1,13 @@
+.footer {
+  .social-list {
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      img {
+        height: 16px;
+        margin: 0 3px 0 3px;
+      }
+    }
+  }
+}
