@@ -7,7 +7,7 @@ import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
-  { path: 'out-clients', component: ClientsComponent },
+  { path: 'our-clients', component: ClientsComponent },
   { path: 'who-are-we', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
 ];

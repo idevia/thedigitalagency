@@ -34,14 +34,62 @@ export class HomepageComponent implements OnInit {
       tag: 'Hope is not strategy, Marketing is.',
       description:
         'Digital marketing has become an essential aspect in running a modern business. At The Digital Agency, we analyse market intelligence to provide our clients with the most suitable and cost effective Creative Digital Marketing Solutions to ensure that their business sees the growth it.',
-      image: 'http://thedigitalagency.london/media/1016/img-2.png',
+      image: 'http://thedigitalagency.london/media/1015/img-3.png',
       button: {
         text: 'How we do?',
         link: '#!',
       },
     },
-  ];
-  constructor() {}
 
-  ngOnInit(): void {}
+    {
+      title: 'Business transformation and Consultation',
+      tag: 'Results You’ll Love',
+      description:
+        'We specialize in helping business expand and grow using help of technology. Our consultant can help you analyse the potential of opportunities with innovation and creative ideas. Just ask us for free consultation and we guarantee you the process to success.',
+      image: 'http://thedigitalagency.london/media/1014/img-4.png',
+      button: {
+        text: 'Get in Touch',
+        link: '#!',
+      },
+    },
+
+    {
+      title: 'Online Marketing',
+      tag: 'Get Things Done',
+      description:
+        'Our Online Marketing services are best-in-class. The Online Marketing work we offer enables your business to grow and helps increase your exposure in your business vertical. We begin by working with you to define project goals that focus on reach, engagement, and conversion. We then map out a plan to achieve these goals. This is what we live for: merging creativity and technology in a way that brings your business more success than you ever thought was possible.',
+      image: 'http://thedigitalagency.london/media/1013/img-5.png',
+      button: {
+        text: 'Get in Touch',
+        link: '#!',
+      },
+    },
+
+    {
+      title: 'Sitecore CMS experts',
+      tag: 'Utilise Sitecore at its best',
+      description:
+        'We have best developers in the market with years of experience developing websites using sitecore. They can be game changer when it comes to integrating website with third party, using market suite or optimising performance.',
+      image: 'http://thedigitalagency.london/media/1012/img-6.png',
+      button: {
+        text: 'Get in Touch',
+        link: '#!',
+      },
+    },
+
+    {
+      title: 'Innovation',
+      tag: 'Lets do something which no one thought about it',
+      description:
+        'Our creative team love brain storming new ideas and possibilities, can we do this? If you need something unique which could be challenging or impossible then discuss with us.',
+      image: 'http://thedigitalagency.london/media/1011/img-7.png',
+      button: {
+        text: 'Get in Touch',
+        link: '#!',
+      },
+    },
+  ];
+  constructor() { }
+
+  ngOnInit(): void { }
 }
