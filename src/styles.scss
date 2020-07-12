@@ -31,3 +31,17 @@ img {
 .service-img {
   max-width: 325px;
 }
+.form-control-minimal {
+  background: transparent;
+  border-radius: 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid #000000 !important;
+  padding-left: 0 !important;
+}
+
+::placeholder {
+  color: #000000;
+}
+.navbar-toggler {
+  border: none;
+}

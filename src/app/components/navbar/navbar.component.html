@@ -26,18 +26,17 @@
 </header>
 <nav class="navbar navbar-expand-md navbar-light bg-white py-0">
   <div class="container">
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div
+      id="navbarNav"
+      [className]="
+        showNavbar
+          ? 'collapse navbar-collapse show'
+          : 'collapse navbar-collapse'
+      "
+    >
       <ul class="navbar-nav">
         <li
           class="nav-item"

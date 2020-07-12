@@ -21,7 +21,13 @@ export class NavbarComponent implements OnInit {
     },
   ];
 
+  showNavbar: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleNavbar() {
+    this.showNavbar = !this.showNavbar;
+  }
 }
