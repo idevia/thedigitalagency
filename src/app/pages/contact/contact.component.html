@@ -1,85 +1,150 @@
 <section class="section py-5 bg-primary text-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="http://thedigitalagency.london/media/1032/contact.png" alt="" srcset="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="http://thedigitalagency.london/media/1032/contact.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="col-md-6">
+        <h1>Connect With Us</h1>
+        <h3>Let’s Collaborate</h3>
+        <p>
+          Get in touch to learn more about how we can drive your brand forward.
+          As a full-service Creative Agency, we know how to help you and your
+          business grow and flourish. All you’ve got to do is call!
+        </p>
+        <p>4 Old Park Lane, Mayfair, London, W1K 1QW</p>
+        <p>contact@thedigitalagency.london</p>
+        <p>0208 133 3306</p>
+
+        <ul class="social-list">
+          <li *ngFor="let link of socialLinks">
+            <a href="{{ link.link }}">
+              <img src="{{ link.image }}" alt="" />
+            </a>
+          </li>
+        </ul>
+
+        <form
+          class="form py-5"
+          id="contact-form"
+          method="post"
+          action="contact.php"
+        >
+          <div class="controls">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group pb-4">
+                  <input
+                    class="form-control form-control-minimal"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group pb-4">
+                  <input
+                    class="form-control form-control-minimal"
+                    type="text"
+                    name="surname"
+                    id="surname"
+                    placeholder="Email"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group pb-4">
+                  <input
+                    class="form-control form-control-minimal"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Phone"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group pb-4">
+                  <input
+                    class="form-control form-control-minimal"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Subject"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group pb-4">
+                  <label class="form-label" for="city">Message</label>
+                  <input
+                    class="form-control form-control-minimal"
+                    type="text"
+                    name="city"
+                    id="city"
+                    placeholder=""
+                    required="required"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-6 js-for-agency" style="display: none;">
+                <div class="form-group pb-4">
+                  <label class="form-label" for="agency-name"
+                    >Nome agenzia</label
+                  >
+                  <input
+                    class="form-control form-control-minimal"
+                    type="text"
+                    name="agency-name"
+                    id="agency-name"
+                    placeholder="Inserci agenzia"
+                    required="required"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 js-for-agency" style="display: none;">
+                <div class="form-group pb-4">
+                  <label class="form-label" for="iva">Partita IVA</label>
+                  <input
+                    class="form-control form-control-minimal"
+                    type="text"
+                    name="iva"
+                    id="iva"
+                    placeholder=""
+                    required="required"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
 
-                <h1>Connect With Us</h1>
-                <h3>Let’s Collaborate</h3>
-                <p>Get in touch to learn more about how we can drive your brand forward. As a full-service Creative
-                    Agency, we know how to help you and your business grow and flourish. All you’ve got to do is call!
-                </p>
-                <p>4 Old Park Lane, Mayfair, London, W1K 1QW</p>
-                <p>contact@thedigitalagency.london</p>
-                <p>0208 133 3306</p>
+            <button type="button" class="btn btn-primary btn-outline-dark px-5">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
 
-
-
-                <form class="form py-5" id="contact-form" method="post" action="contact.php">
-                    <div class="controls">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group pb-4">
-                                    <input class="form-control form-control-minimal" type="text" name="name" id="name"
-                                        placeholder="Name" required="required">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group pb-4">
-                                    <input class="form-control form-control-minimal" type="text" name="surname"
-                                        id="surname" placeholder="Email" required="required">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group pb-4">
-                                    <input class="form-control form-control-minimal" type="email" name="email"
-                                        id="email" placeholder="Phone" required="required">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group pb-4">
-                                    <input class="form-control form-control-minimal" type="email" name="email"
-                                        id="email" placeholder="Subject" required="required">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group pb-4">
-                                    <label class="form-label" for="city">Message</label>
-                                    <input class="form-control form-control-minimal" type="text" name="city" id="city"
-                                        placeholder="" required="required">
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 js-for-agency" style="display: none;">
-                                <div class="form-group pb-4">
-                                    <label class="form-label" for="agency-name">Nome agenzia</label>
-                                    <input class="form-control form-control-minimal" type="text" name="agency-name"
-                                        id="agency-name" placeholder="Inserci agenzia" required="required">
-                                </div>
-                            </div>
-                            <div class="col-md-6 js-for-agency" style="display: none;">
-                                <div class="form-group pb-4">
-                                    <label class="form-label" for="iva">Partita IVA</label>
-                                    <input class="form-control form-control-minimal" type="text" name="iva" id="iva"
-                                        placeholder="" required="required">
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="button" class="btn btn-primary btn-outline-dark px-5">
-                            Submit
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-            <div class="col-md-12 py-5">
-                <iframe width="100%" height="450"
-                    src="https://www.google.com/maps/embed/v1/search?q=4%20Old%20Park%20Lane%2C%20London%2C%20United%20Kingdom&amp;key=AIzaSyDnIJA_fxtrKNfRiZFyvbVvJFs2nR47CWA"
-                    frameborder="0" allowfullscreen="" style="border: 0;"></iframe>
-            </div>
-        </div>
+      <div class="col-md-12 py-5">
+        <iframe
+          width="100%"
+          height="450"
+          src="https://www.google.com/maps/embed/v1/search?q=4%20Old%20Park%20Lane%2C%20London%2C%20United%20Kingdom&amp;key=AIzaSyDnIJA_fxtrKNfRiZFyvbVvJFs2nR47CWA"
+          frameborder="0"
+          allowfullscreen=""
+          style="border: 0;"
+        ></iframe>
+      </div>
     </div>
+  </div>
 </section>
