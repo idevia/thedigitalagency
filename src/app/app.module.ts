@@ -11,6 +11,7 @@ import { ClientsComponent } from './pages/clients/clients.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SingleServiceComponent } from './single-service/single-service.component';
+import { SingleClientComponent } from './components/single-client/single-client.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SingleServiceComponent } from './single-service/single-service.componen
     AboutComponent,
     HomepageComponent,
     SingleServiceComponent,
+    SingleClientComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
