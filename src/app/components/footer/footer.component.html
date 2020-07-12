@@ -1,1 +1,21 @@
-<p>footer works!</p>
+<footer class="footer bg-dark text-white py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="mailto:contact@thedigitalagency.london" class="text-white">
+          conatct@thedigitalagency.london
+        </a>
+        <br />
+        <p class="mb-0">0208 133 3306</p>
+        <p class="mb-0">4 Old Park Lane, Mayfair, London, W1K 1QW</p>
+        <ul class="social-list">
+          <li *ngFor="let link of socialLinks">
+            <a href="{{ link.link }}">
+              <img src="{{ link.image }}" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

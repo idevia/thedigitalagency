@@ -9,17 +9,25 @@ $theme-colors: (
 
 $btn-border-radius: 0;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Livvic:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Livvic:ital,wght@1,600&display=swap");
 
-$font-family-sans-serif: 'Inter', sans-serif;
+$font-family-sans-serif: "Inter", sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
-h1,h2,h3,h4,h5,h6 {
-  font-family : 'Livvic', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Livvic", sans-serif;
 }
 
 img {
   max-width: 100%;
 }
 
+.service-img {
+  max-width: 325px;
+}
