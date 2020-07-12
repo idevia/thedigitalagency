@@ -1,7 +1,7 @@
 <section class="section py-5 bg-primary text-dark text-center">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-md-10 offset-md-1">
             <img style="max-width: 60px;" src="http://thedigitalagency.london/media/1018/svg.png" alt="">
           <h1 class="h2 mt-3">Services We Offer</h1>
           <h2 class="h3">Beautiful, engaging digital experiences</h2>
@@ -13,6 +13,16 @@
             suitable group of experts to help them achieve their goals. With our
             proven strategies, your business is bound for wild success.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section py-5 services bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let client of clients">
+          <app-single-client [client]="client"></app-single-client>
         </div>
       </div>
     </div>

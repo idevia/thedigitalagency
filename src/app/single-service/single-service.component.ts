@@ -9,7 +9,7 @@ export class SingleServiceComponent implements OnInit {
   @Input() service: any;
 
   constructor() {
-    console.log(this.service);
+    
   }
 
   ngOnInit(): void {}
