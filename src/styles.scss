@@ -5,4 +5,15 @@ $theme-colors: (
   "primary": #f270b6,
   "danger": #ff4136,
 );
+
+$btn-border-radius: 0;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Livvic:ital,wght@1,600&display=swap');
+
+$font-family-sans-serif: 'Inter', sans-serif;
+
 @import "~bootstrap/scss/bootstrap";
+
+h1,h2,h3,h4,h5,h6 {
+  font-family : 'Livvic', sans-serif;
+}
