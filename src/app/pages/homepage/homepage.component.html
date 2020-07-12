@@ -1,1 +1,28 @@
-<p>homepage works!</p>
+<section class="section py-5 bg-primary text-dark text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="h2">Services We Offer</h1>
+        <h2 class="h3">Beautiful, engaging digital experiences</h2>
+        <p>
+          Not every Creative Agency is created equal. At The Digital Agency, we
+          know that the best results come from having the right people working
+          on the right project. Our team offers expertise in various areas of
+          Creative Agency services, which is why each client is matched with a
+          suitable group of experts to help them achieve their goals. With our
+          proven strategies, your business is bound for wild success.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section py-5 services bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3" *ngFor="let service of services">
+        <app-single-service [service]="service"></app-single-service>
+      </div>
+    </div>
+  </div>
+</section>

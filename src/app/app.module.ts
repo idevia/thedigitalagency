@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ClientsComponent } from './pages/clients/clients.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SingleServiceComponent } from './single-service/single-service.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
     ClientsComponent,
     AboutComponent,
     HomepageComponent,
+    SingleServiceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+$theme-colors: (
+  "primary": #f270b6,
+  "danger": #ff4136,
+);
+@import "~bootstrap/scss/bootstrap";

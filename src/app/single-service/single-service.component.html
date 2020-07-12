@@ -1,0 +1,11 @@
+<article class="service text-center text-white mb-5">
+  <img src="{{ service.image }}" alt="" class="rounded-circle" />
+  <h2 class="text-primary">{{ service.title }}</h2>
+  <p>
+    <small>{{ service.tag }}</small>
+  </p>
+  <p>{{ service.description }}</p>
+  <a href="{{ service.button.link }}" class="btn btn-primary text-dark">
+    {{ service.button.text }}
+  </a>
+</article>
