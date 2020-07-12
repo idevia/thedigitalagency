@@ -12,6 +12,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { SingleServiceComponent } from './single-service/single-service.component';
 import { SingleClientComponent } from './components/single-client/single-client.component';
+import { DigitalMarketingComponent } from './pages/digital-marketing/digital-marketing.component';
+import { SingleDigitalMarketItemComponent } from './components/single-digital-market-item/single-digital-market-item.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { SingleClientComponent } from './components/single-client/single-client.
     HomepageComponent,
     SingleServiceComponent,
     SingleClientComponent,
+    DigitalMarketingComponent,
+    SingleDigitalMarketItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
