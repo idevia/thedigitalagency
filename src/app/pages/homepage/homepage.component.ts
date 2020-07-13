@@ -15,7 +15,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1017/img-1.png',
       button: {
         text: 'How we do?',
-        link: '#!',
+        link: '/creative-apps',
       },
     },
     {
@@ -26,7 +26,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1016/img-2.png',
       button: {
         text: 'How we do?',
-        link: '#!',
+        link: '/website-design-process',
       },
     },
     {
@@ -89,7 +89,7 @@ export class HomepageComponent implements OnInit {
       },
     },
   ];
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void { }
+  ngOnInit(): void {}
 }
