@@ -37,7 +37,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1015/img-3.png',
       button: {
         text: 'How we do?',
-        link: '#!',
+        link: '/digital-marketing',
       },
     },
 
@@ -49,7 +49,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1014/img-4.png',
       button: {
         text: 'Get in Touch',
-        link: '#!',
+        link: '/contact-us',
       },
     },
 
@@ -61,7 +61,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1013/img-5.png',
       button: {
         text: 'Get in Touch',
-        link: '#!',
+        link: '/contact-us',
       },
     },
 
@@ -73,7 +73,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1012/img-6.png',
       button: {
         text: 'Get in Touch',
-        link: '#!',
+        link: '/contact-us',
       },
     },
 
@@ -85,7 +85,7 @@ export class HomepageComponent implements OnInit {
       image: 'http://thedigitalagency.london/media/1011/img-7.png',
       button: {
         text: 'Get in Touch',
-        link: '#!',
+        link: '/contact-us',
       },
     },
   ];
