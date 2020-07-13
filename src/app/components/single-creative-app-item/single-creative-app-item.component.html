@@ -1,1 +1,12 @@
-<p>single-creative-app-item works!</p>
+<div class="row no-gutters align-items-center">
+    <div [className]="index % 2 == 0 ? 'col-md-6' : 'col-md-6 order-md-2'">
+        <div class="p-4">
+            <h2 class="text-primary">{{app.title}}</h2>
+        <p>{{app.description}}</p>
+        </div>
+    </div>
+    
+    <div [className]="index % 2 == 0 ? 'col-md-6' : 'col-md-6 order-md-1'">
+        <img src="{{app.image}}" alt="">
+    </div>
+</div>

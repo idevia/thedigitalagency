@@ -16,6 +16,7 @@ import { DigitalMarketingComponent } from './pages/digital-marketing/digital-mar
 import { SingleDigitalMarketItemComponent } from './components/single-digital-market-item/single-digital-market-item.component';
 import { CreativeAppsComponent } from './pages/creative-apps/creative-apps.component';
 import { SingleCreativeAppItemComponent } from './components/single-creative-app-item/single-creative-app-item.component';
+import { WebsiteDesignComponent } from './pages/website-design/website-design.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SingleCreativeAppItemComponent } from './components/single-creative-app
     SingleDigitalMarketItemComponent,
     CreativeAppsComponent,
     SingleCreativeAppItemComponent,
+    WebsiteDesignComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

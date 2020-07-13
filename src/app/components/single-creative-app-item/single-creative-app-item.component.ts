@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-single-creative-app-item',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-creative-app-item.component.scss']
 })
 export class SingleCreativeAppItemComponent implements OnInit {
+
+  @Input() app: any;
+  @Input() index: any;
 
   constructor() { }
 
