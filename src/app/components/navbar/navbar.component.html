@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="d-sm-flex text-center text-sm-left align-items-center">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" routerLink="#">
             <img
               src="http://thedigitalagency.london/media/1067/logo-vh.png"
               alt=""
@@ -57,7 +57,7 @@
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item" *ngFor="let link of socialLinks">
-          <a href="{{ link.link }}" class="nav-link">
+          <a routerLink="{{ link.link }}" class="nav-link">
             <img src="{{ link.image }}" alt="" />
           </a>
         </li>

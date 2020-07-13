@@ -22,7 +22,7 @@
 
         <ul class="social-list">
           <li *ngFor="let link of socialLinks">
-            <a href="{{ link.link }}">
+            <a routerLink="{{ link.link }}">
               <img src="{{ link.image }}" alt="" />
             </a>
           </li>
