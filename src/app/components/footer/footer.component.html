@@ -10,7 +10,7 @@
         <p class="mb-0">4 Old Park Lane, Mayfair, London, W1K 1QW</p>
         <ul class="social-list">
           <li *ngFor="let link of socialLinks">
-            <a routerLink="{{ link.link }}">
+            <a href="{{ link.link }}">
               <i class="{{ link.icon }}"></i>
             </a>
           </li>
