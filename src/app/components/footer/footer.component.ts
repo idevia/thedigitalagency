@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,26 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  socialLinks = [
-    {
-      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1001/facebook.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1002/twitter.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1003/youtube.png',
-      link: '#!',
-    },
-  ];
+  socialLinks = [];
 
-  constructor() {}
+  constructor(private dataService: DataService) {
+    this.socialLinks = this.dataService.getSocialData();
+  }
 
   ngOnInit(): void {}
 }

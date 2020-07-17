@@ -17,6 +17,8 @@ import { SingleDigitalMarketItemComponent } from './components/single-digital-ma
 import { CreativeAppsComponent } from './pages/creative-apps/creative-apps.component';
 import { SingleCreativeAppItemComponent } from './components/single-creative-app-item/single-creative-app-item.component';
 import { WebsiteDesignComponent } from './pages/website-design/website-design.component';
+import { DataService } from './services/data.service';
+import { SEO } from './services/seo.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,7 @@ import { WebsiteDesignComponent } from './pages/website-design/website-design.co
     WebsiteDesignComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
-  providers: [],
+  providers: [DataService, SEO],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

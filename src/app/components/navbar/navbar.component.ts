@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,28 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  socialLinks = [
-    {
-      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1007/icon-twitter.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1006/icon-youtube.png',
-      link: '#!',
-    },
-  ];
+  socialLinks = [];
 
   showNavbar: boolean = false;
 
-  constructor() {}
+  constructor(private data: DataService) {
+    this.socialLinks = this.data.getSocialData();
+  }
 
   ngOnInit(): void {}
 

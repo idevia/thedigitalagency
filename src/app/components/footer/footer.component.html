@@ -7,12 +7,11 @@
         </a>
         <br />
         <p class="mb-0">0208 133 3306</p>
-        <i class="si si-facebook"></i>
         <p class="mb-0">4 Old Park Lane, Mayfair, London, W1K 1QW</p>
         <ul class="social-list">
           <li *ngFor="let link of socialLinks">
             <a routerLink="{{ link.link }}">
-              <img src="{{ link.image }}" alt="" />
+              <i class="{{ link.icon }}"></i>
             </a>
           </li>
         </ul>
