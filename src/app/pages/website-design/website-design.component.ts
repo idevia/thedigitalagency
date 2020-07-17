@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { SEO } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-website-design',
   templateUrl: './website-design.component.html',
-  styleUrls: ['./website-design.component.scss']
+  styleUrls: ['./website-design.component.scss'],
 })
 export class WebsiteDesignComponent implements OnInit {
   processes = [
@@ -50,9 +51,15 @@ export class WebsiteDesignComponent implements OnInit {
         'Help our customer with niche tracking tools and techniques to get the maximum ROI.',
     },
   ];
-  constructor() { }
+  constructor(private seo: SEO) {}
 
   ngOnInit(): void {
+    this.seo.generateTags({
+      title: 'Contact Page',
+      description:
+        'Contact me through this awesome search engine optimized Angular component',
+      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
+      slug: 'contact-page',
+    });
   }
-
 }

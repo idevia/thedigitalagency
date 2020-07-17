@@ -66,3 +66,46 @@ img {
   font-size: 36px;
   font-weight: 300;
 }
+
+//icon-fonts
+
+@font-face {
+  font-family: "social-icons";
+  src: url("./assets/fonts/social-icons.eot?bt3q5l");
+  src: url("./assets/fonts/social-icons.eot?bt3q5l#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/social-icons.ttf?bt3q5l") format("truetype"),
+    url("./assets/fonts/social-icons.woff?bt3q5l") format("woff"),
+    url("./assets/fonts/social-icons.svg?bt3q5l#social-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "social-icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.si-facebook:before {
+  content: "\ea90";
+}
+.si-instagram:before {
+  content: "\ea92";
+}
+.si-twitter:before {
+  content: "\ea96";
+}
+.si-youtube:before {
+  content: "\ea9d";
+}

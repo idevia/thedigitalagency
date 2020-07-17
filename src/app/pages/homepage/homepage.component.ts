@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SEO } from '../../services/seo.service';
 
 @Component({
   selector: 'app-homepage',
@@ -89,7 +90,7 @@ export class HomepageComponent implements OnInit {
       },
     },
   ];
-  constructor() {}
+  constructor(private seo: SEO) {}
 
   ngOnInit(): void {}
 }

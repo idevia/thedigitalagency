@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { SEO } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-digital-marketing',
   templateUrl: './digital-marketing.component.html',
-  styleUrls: ['./digital-marketing.component.scss']
+  styleUrls: ['./digital-marketing.component.scss'],
 })
 export class DigitalMarketingComponent implements OnInit {
-
   marketings = [
     {
       title: "There's an right and wrong way for everything",
@@ -18,7 +18,7 @@ export class DigitalMarketingComponent implements OnInit {
     },
 
     {
-      title: "Social identity is heart of businesses today",
+      title: 'Social identity is heart of businesses today',
       image: 'http://thedigitalagency.london/media/1046/img002.png',
       button: {
         text: 'Get in Touch',
@@ -27,7 +27,7 @@ export class DigitalMarketingComponent implements OnInit {
     },
 
     {
-      title: "Digital appearance can change everything",
+      title: 'Digital appearance can change everything',
       image: 'http://thedigitalagency.london/media/1047/img003.png',
       button: {
         text: 'How we do it?',
@@ -36,7 +36,7 @@ export class DigitalMarketingComponent implements OnInit {
     },
 
     {
-      title: "Content is the king",
+      title: 'Content is the king',
       image: 'http://thedigitalagency.london/media/1048/img004.png',
       button: {
         text: 'Know details',
@@ -45,7 +45,7 @@ export class DigitalMarketingComponent implements OnInit {
     },
 
     {
-      title: "Traditional techniques but still effective",
+      title: 'Traditional techniques but still effective',
       image: 'http://thedigitalagency.london/media/1050/img005.png',
       button: {
         text: 'Get results',
@@ -54,7 +54,7 @@ export class DigitalMarketingComponent implements OnInit {
     },
 
     {
-      title: "Getting you the best of ROI",
+      title: 'Getting you the best of ROI',
       image: 'http://thedigitalagency.london/media/1051/img006.png',
       button: {
         text: 'Ask us how we do?',
@@ -63,7 +63,7 @@ export class DigitalMarketingComponent implements OnInit {
     },
 
     {
-      title: "Still growing but can be game changer",
+      title: 'Still growing but can be game changer',
       image: 'http://thedigitalagency.london/media/1049/img007.png',
       button: {
         text: 'Try our techniques',
@@ -72,9 +72,15 @@ export class DigitalMarketingComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private seo: SEO) {}
 
   ngOnInit(): void {
+    this.seo.generateTags({
+      title: 'Contact Page',
+      description:
+        'Contact me through this awesome search engine optimized Angular component',
+      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
+      slug: 'contact-page',
+    });
   }
-
 }

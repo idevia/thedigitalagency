@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SEO } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-creative-apps',
@@ -50,7 +51,15 @@ export class CreativeAppsComponent implements OnInit {
         'Help our customer with niche tracking tools and techniques to get the maximum ROI.',
     },
   ];
-  constructor() {}
+  constructor(private seo: SEO) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.seo.generateTags({
+      title: 'Contact Page',
+      description:
+        'Contact me through this awesome search engine optimized Angular component',
+      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
+      slug: 'contact-page',
+    });
+  }
 }

@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { SEO } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-clients',
   templateUrl: './clients.component.html',
-  styleUrls: ['./clients.component.scss']
+  styleUrls: ['./clients.component.scss'],
 })
 export class ClientsComponent implements OnInit {
   clients = [
@@ -33,7 +34,6 @@ export class ClientsComponent implements OnInit {
       },
     },
 
-
     {
       title: 'Hotel4U',
       image: 'http://thedigitalagency.london/media/1027/logo-4.jpg',
@@ -42,7 +42,6 @@ export class ClientsComponent implements OnInit {
         link: 'http://www.hotels4u.com/',
       },
     },
-
 
     {
       title: 'ASOS',
@@ -53,7 +52,6 @@ export class ClientsComponent implements OnInit {
       },
     },
 
-
     {
       title: 'Thomas Cook',
       image: 'http://thedigitalagency.london/media/1025/logo-6.jpg',
@@ -63,7 +61,6 @@ export class ClientsComponent implements OnInit {
       },
     },
 
-
     {
       title: 'Cadbury',
       image: 'http://thedigitalagency.london/media/1024/logo-7.jpg',
@@ -72,7 +69,6 @@ export class ClientsComponent implements OnInit {
         link: 'https://www.cadbury.co.uk/',
       },
     },
-
 
     {
       title: 'Zuto',
@@ -92,7 +88,6 @@ export class ClientsComponent implements OnInit {
       },
     },
 
-
     {
       title: 'Hoseasons',
       image: 'http://thedigitalagency.london/media/1021/logo-10.jpg',
@@ -101,7 +96,6 @@ export class ClientsComponent implements OnInit {
         link: 'http://www.hoseasons.co.uk/',
       },
     },
-
 
     {
       title: 'Booking.com',
@@ -112,7 +106,6 @@ export class ClientsComponent implements OnInit {
       },
     },
 
-
     {
       title: 'Man Utd',
       image: 'http://thedigitalagency.london/media/1019/logo-12.jpg',
@@ -121,12 +114,17 @@ export class ClientsComponent implements OnInit {
         link: 'http://www.manutd.com/',
       },
     },
-
   ];
 
-  constructor() { }
+  constructor(private seo: SEO) {}
 
   ngOnInit(): void {
+    this.seo.generateTags({
+      title: 'Contact Page',
+      description:
+        'Contact me through this awesome search engine optimized Angular component',
+      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
+      slug: 'contact-page',
+    });
   }
-
 }
