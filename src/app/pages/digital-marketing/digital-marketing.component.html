@@ -1,24 +1,30 @@
-<div class="jumbotron jumbotron-fluid d-flex align-items-center text-center jumbotron-bg">
-    <div class="container ">
-      <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <h1>Digital Marketing</h1>
-            <p>Digital marketing has become an essential aspect in running
-              a modern business. At TheDigitalAgency, we analyse market intelligence
-              to provide our clients with the most suitable and cost effective
-              Creative Digital Marketing Solutions to ensure that
-              their business sees the growth in it.</p>
-          </div>
+<div
+  class="jumbotron jumbotron-fluid d-flex align-items-center text-center jumbotron-bg"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <h1 class="sub-heading">Digital Marketing</h1>
+        <p>
+          Digital marketing has become an essential aspect in running a modern
+          business. At TheDigitalAgency, we analyse market intelligence to
+          provide our clients with the most suitable and cost effective Creative
+          Digital Marketing Solutions to ensure that their business sees the
+          growth in it.
+        </p>
       </div>
     </div>
   </div>
+</div>
 
-  <section class="section marketing bg-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 offset-md-1" *ngFor="let marketing of marketings">
-          <app-single-digital-market-item [marketing]="marketing"></app-single-digital-market-item>
-        </div>
+<section class="section marketing bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1" *ngFor="let marketing of marketings">
+        <app-single-digital-market-item
+          [marketing]="marketing"
+        ></app-single-digital-market-item>
       </div>
     </div>
-  </section>
+  </div>
+</section>

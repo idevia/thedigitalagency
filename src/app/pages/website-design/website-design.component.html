@@ -1,27 +1,23 @@
-<div class="jumbotron jumbotron-fluid d-flex align-items-center text-center jumbotron-bg">
-    <div class="container ">
-      <div class="row">
-          <div class="col-md-10 offset-md-1">
-            <h1>Mobile development
-                Transform an idea into reality</h1>
-            <p>In recent years, Web and mobile development has become more
-                dominant in society both socially and in business. Apps have become
-                ingrained in our everyday lives, and the ever advancing operating
-                systems of android, windows and ios provide businesses with
-                opportunities to gain ground like never before. At The Digital Agency,
-                we’re experts in crafting the perfect app for your business and your
-                target market. By employing this advanced form of digital marketing, our
-                client’s see growth that can only be achieved through innovative means.</p>
-            <p>So how we do it?</p>
-          </div>
+<div
+  class="jumbotron jumbotron-fluid d-flex align-items-center text-center jumbotron-bg"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 offset-md-1">
+        <h1 class="sub-heading">Website Design Process</h1>
+        <p>Crafting visually stunning memorable experiences</p>
       </div>
     </div>
   </div>
+</div>
 
-  <section class="py-5 bg-dark text-white">
-      <div class="container">
-          <div *ngFor="let app of processes; index as i;" >
-            <app-single-creative-app-item [app] = "app" [index] = "i"></app-single-creative-app-item>
-          </div>
-      </div>
-  </section>
+<section class="py-5 bg-dark text-white">
+  <div class="container">
+    <div *ngFor="let app of processes; index as i">
+      <app-single-creative-app-item
+        [app]="app"
+        [index]="i"
+      ></app-single-creative-app-item>
+    </div>
+  </div>
+</section>

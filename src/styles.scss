@@ -51,9 +51,18 @@ img {
 }
 
 .jumbotron-bg {
-  background-image: url(http://thedigitalagency.london/media/1041/innerbanner1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
   color: #ffffff;
+}
+
+.sub-heading {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.sub-tagline {
+  font-size: 36px;
+  font-weight: 300;
 }
