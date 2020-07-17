@@ -16,11 +16,10 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.generateTags({
-      title: 'Contact Page',
+      title: 'Contact us | Digital Agency London | Creative Agency',
       description:
-        'Contact me through this awesome search engine optimized Angular component',
-      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
-      slug: 'contact-page',
+        'Get in touch to discuss your projects, we can help you achieve your ambitious goals into reality',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
     });
   }
 }

@@ -10,15 +10,15 @@ export class DataService {
       },
       {
         icon: 'si si-facebook',
-        link: '#!',
+        link: 'https://www.facebook.com/thedigitalagencylondon/',
       },
       {
         icon: 'si si-youtube',
-        link: '#!',
+        link: 'https://www.youtube.com/channel/UCrYXTOE0ZEbt6xwkHi0dUjQ',
       },
       {
         icon: 'si si-twitter',
-        link: '#!',
+        link: 'https://twitter.com/_Digital_Agency',
       },
     ],
   };

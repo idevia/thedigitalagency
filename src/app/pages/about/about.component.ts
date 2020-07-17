@@ -11,11 +11,10 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.generateTags({
-      title: 'Contact Page',
+      title: 'Who we are | Digital Agency London | Creative Agency',
       description:
-        'Contact me through this awesome search engine optimized Angular component',
-      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
-      slug: 'contact-page',
+        'The Digital Agency has grown to become one of the London leading agency, specialising in digital marketing, web and mobile development',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
     });
   }
 }

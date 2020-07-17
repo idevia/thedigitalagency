@@ -55,11 +55,10 @@ export class WebsiteDesignComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.generateTags({
-      title: 'Contact Page',
+      title: 'Website Design | Digital Agency London |Creative Agency',
       description:
-        'Contact me through this awesome search engine optimized Angular component',
-      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
-      slug: 'contact-page',
+        'Our best in industry experts can help you build creative website to transform the digital experience and user journeys',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
     });
   }
 }

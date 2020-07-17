@@ -92,5 +92,12 @@ export class HomepageComponent implements OnInit {
   ];
   constructor(private seo: SEO) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.seo.generateTags({
+      title: 'Digital Agency London | Result Driven Creative Agency',
+      description:
+        'Creative agency based in London providing clients with niche digital marketing and development services in web and mobile arena',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
+    });
+  }
 }

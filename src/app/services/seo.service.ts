@@ -11,7 +11,7 @@ export class SEO {
       title: 'Digital Agency London | Result Driven Creative Agency',
       description:
         'Creative agency based in London providing clients with niche digital marketing and development services in web and mobile arena',
-      image: 'http://thedigitalagency.london/media/1067/logo-vh.png',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
       slug: '',
       ...config,
     };

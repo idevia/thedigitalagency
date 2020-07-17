@@ -120,11 +120,10 @@ export class ClientsComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.generateTags({
-      title: 'Contact Page',
+      title: 'Our Clients | Digital Agency London | Creative Agency',
       description:
-        'Contact me through this awesome search engine optimized Angular component',
-      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
-      slug: 'contact-page',
+        'We are proud to work with world renowned clients in banking, travel, retail, insurance and technology industry',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
     });
   }
 }

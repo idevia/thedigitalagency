@@ -55,11 +55,10 @@ export class CreativeAppsComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.generateTags({
-      title: 'Contact Page',
+      title: 'Creative apps | Digital Agency London | iOS and Android',
       description:
-        'Contact me through this awesome search engine optimized Angular component',
-      image: 'https://instafire-app.firebaseapp.com/assets/meerkat.jpeg',
-      slug: 'contact-page',
+        'Our highly experienced creative team can help you develop apps to get edge on the mobile technology with the innovative ideas',
+      image: 'http://thedigitalagency.london/media/1041/innerbanner1.png',
     });
   }
 }
