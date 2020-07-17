@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   socialLinks = [
     {
+      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
+      link: '#!',
+    },
+    {
       image: 'http://thedigitalagency.london/media/1001/facebook.png',
       link: '#!',
     },

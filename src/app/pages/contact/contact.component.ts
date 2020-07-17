@@ -12,6 +12,10 @@ export class ContactComponent implements OnInit {
       link: '#!',
     },
     {
+      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
+      link: '#!',
+    },
+    {
       image: 'http://thedigitalagency.london/media/1007/icon-twitter.png',
       link: '#!',
     },
