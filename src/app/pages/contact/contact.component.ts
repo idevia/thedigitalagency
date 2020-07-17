@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SEO } from 'src/app/services/seo.service';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,26 +8,11 @@ import { SEO } from 'src/app/services/seo.service';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-  socialLinks = [
-    {
-      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1008/icon-facebook.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1007/icon-twitter.png',
-      link: '#!',
-    },
-    {
-      image: 'http://thedigitalagency.london/media/1006/icon-youtube.png',
-      link: '#!',
-    },
-  ];
+  socialLinks = [];
 
-  constructor(private seo: SEO) {}
+  constructor(private seo: SEO, private dataService: DataService) {
+    this.socialLinks = this.dataService.getSocialData();
+  }
 
   ngOnInit(): void {
     this.seo.generateTags({
