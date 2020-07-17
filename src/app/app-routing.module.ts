@@ -13,9 +13,9 @@ const routes: Routes = [
   { path: 'our-clients', component: ClientsComponent },
   { path: 'who-are-we', component: AboutComponent },
   { path: 'contact-us', component: ContactComponent },
-  { path: 'digital-marketing', component: DigitalMarketingComponent},
-  { path: 'creative-apps', component: CreativeAppsComponent},
-  { path: 'website-design-process', component: WebsiteDesignComponent}
+  { path: 'digital-marketing', component: DigitalMarketingComponent },
+  { path: 'creative-apps', component: CreativeAppsComponent },
+  { path: 'website-design-process', component: WebsiteDesignComponent },
 ];
 
 @NgModule({

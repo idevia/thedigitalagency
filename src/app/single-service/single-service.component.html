@@ -1,8 +1,8 @@
 <article class="service text-center text-white mb-5 pb-4">
   <img src="{{ service.image }}" alt="" class="rounded-circle mb-3" />
-  <h2 class="text-primary">{{ service.title }}</h2>
+  <h3 class="text-primary font-weight-bold">{{ service.title }}</h3>
   <p>
-    <small>{{ service.tag }}</small>
+    {{ service.tag }}
   </p>
   <p>{{ service.description }}</p>
   <a routerLink="{{ service.button.link }}" class="btn btn-primary text-dark">

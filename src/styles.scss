@@ -8,10 +8,10 @@ $theme-colors: (
 );
 
 $btn-border-radius: 0;
+@import url("//db.onlinewebfonts.com/c/592d7d249c34da18d3a6fea41e031cfe?family=BreeW01-ThinOblique");
+@import url("//db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light");
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Livvic:ital,wght@1,600&display=swap");
-
-$font-family-sans-serif: "Inter", sans-serif;
+$font-family-sans-serif: "Avenir Light", sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Livvic", sans-serif;
+  font-family: "BreeW01-ThinOblique", sans-serif;
 }
 
 img {
@@ -46,8 +46,7 @@ img {
   border: none;
 }
 
-
-.jumbotron{
+.jumbotron {
   margin-bottom: 0px !important;
 }
 
