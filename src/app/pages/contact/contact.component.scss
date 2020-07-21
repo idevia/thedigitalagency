@@ -13,3 +13,8 @@
 .form-control:focus {
   background-color: transparent !important;
 }
+.form-control {
+  &.is-invalid {
+    background: none;
+  }
+}

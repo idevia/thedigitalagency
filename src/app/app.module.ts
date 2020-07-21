@@ -19,6 +19,7 @@ import { SingleCreativeAppItemComponent } from './components/single-creative-app
 import { WebsiteDesignComponent } from './pages/website-design/website-design.component';
 import { DataService } from './services/data.service';
 import { SEO } from './services/seo.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { SEO } from './services/seo.service';
     SingleCreativeAppItemComponent,
     WebsiteDesignComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, ReactiveFormsModule],
   providers: [DataService, SEO],
   bootstrap: [AppComponent],
 })

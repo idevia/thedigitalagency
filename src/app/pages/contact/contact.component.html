@@ -36,6 +36,8 @@
           id="contact-form"
           method="post"
           action="contact.php"
+          [formGroup]="form"
+          (submit)="handleSubmit()"
         >
           <div class="controls">
             <div class="row">
@@ -48,7 +50,13 @@
                     id="name"
                     placeholder="Name"
                     required="required"
+                    formControlName="name"
+                    [ngClass]="{
+                      'is-invalid':
+                        form.get('name').touched && form.get('name').invalid
+                    }"
                   />
+                  <div class="invalid-feedback text-dark">Name required</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -60,7 +68,13 @@
                     id="surname"
                     placeholder="Email"
                     required="required"
+                    formControlName="email"
+                    [ngClass]="{
+                      'is-invalid':
+                        form.get('email').touched && form.get('email').invalid
+                    }"
                   />
+                  <div class="invalid-feedback text-dark">E-mail not valid</div>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -89,41 +103,12 @@
               </div>
               <div class="col-md-12">
                 <div class="form-group pb-4">
-                  <label class="form-label" for="city">Message</label>
+                  <label class="form-label" for="message">Message</label>
                   <input
                     class="form-control form-control-minimal"
                     type="text"
-                    name="city"
-                    id="city"
-                    placeholder=""
-                    required="required"
-                  />
-                </div>
-              </div>
-
-              <div class="col-md-6 js-for-agency" style="display: none;">
-                <div class="form-group pb-4">
-                  <label class="form-label" for="agency-name"
-                    >Nome agenzia</label
-                  >
-                  <input
-                    class="form-control form-control-minimal"
-                    type="text"
-                    name="agency-name"
-                    id="agency-name"
-                    placeholder="Inserci agenzia"
-                    required="required"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6 js-for-agency" style="display: none;">
-                <div class="form-group pb-4">
-                  <label class="form-label" for="iva">Partita IVA</label>
-                  <input
-                    class="form-control form-control-minimal"
-                    type="text"
-                    name="iva"
-                    id="iva"
+                    name="message"
+                    id="message"
                     placeholder=""
                     required="required"
                   />
@@ -131,7 +116,7 @@
               </div>
             </div>
 
-            <button type="button" class="btn btn-primary btn-outline-dark px-5">
+            <button type="submit" class="btn btn-primary btn-outline-dark px-5">
               Submit
             </button>
           </div>
