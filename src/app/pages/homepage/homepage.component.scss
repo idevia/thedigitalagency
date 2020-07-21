@@ -41,6 +41,8 @@
     header {
       background: url("http://thedigitalagency.london/media/1010/banner.jpg?center=0.5,0.5&mode=crop&width=1900&height=620&rnd=637273398200000000")
         black no-repeat center center scroll;
+      .header {
+      }
     }
     header video {
       display: none;
@@ -53,5 +55,9 @@
 @media screen and (max-width: 800px) {
   .hamburger-menu {
     display: block;
+  }
+  .header {
+    height: 20vh;
+    min-height: 20rem;
   }
 }
