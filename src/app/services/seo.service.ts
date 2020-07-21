@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Injectable()
 export class SEO {
-  constructor(private meta: Meta) {}
+  constructor(private meta: Meta, private titleService: Title) {}
 
   generateTags(config) {
     // default values
@@ -22,7 +22,8 @@ export class SEO {
     // this.meta.updateTag({ name: 'twitter:description', content: config.description })
     // this.meta.updateTag({ name: 'twitter:image', content: config.image })
 
-    this.meta.updateTag({ property: 'og:type', content: 'article' });
+    this.titleService.setTitle(config.title);
+
     this.meta.updateTag({
       property: 'og:site_name',
       content: 'Digital Agency',

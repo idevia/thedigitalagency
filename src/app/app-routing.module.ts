@@ -11,7 +11,7 @@ import { WebsiteDesignComponent } from './pages/website-design/website-design.co
 const routes: Routes = [
   { path: '', component: HomepageComponent, pathMatch: 'full' },
   { path: 'our-clients', component: ClientsComponent },
-  { path: 'who-are-we', component: AboutComponent },
+  { path: 'who-we-are', component: AboutComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'digital-marketing', component: DigitalMarketingComponent },
   { path: 'creative-apps', component: CreativeAppsComponent },

@@ -43,7 +43,12 @@ img {
   color: #000000 !important;
 }
 .navbar-toggler {
-  border: none;
+  padding: 0.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  span {
+    transform: scale(0.8);
+  }
 }
 
 .jumbotron {

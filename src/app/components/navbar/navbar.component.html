@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-6">
         <div class="d-sm-flex text-center text-sm-left align-items-center">
-          <a class="navbar-brand" routerLink="#">
+          <a class="navbar-brand" routerLink="/">
             <img
               src="http://thedigitalagency.london/media/1067/logo-vh.png"
               alt="The Digital Agency Logo"
@@ -13,17 +13,12 @@
           </a>
           <div class="logo-text text-white">
             <h1
-              class="h3 mb-0"
-              style="
-                font-weight: bold;
-                font-size: 24px;
-                color: #f270b6;
-                margin-top: 12px;
-              "
+              class="h3 mb-0 mt-md-2 text-primary font-weight-bold"
+              style="font-size: 24px;"
             >
               The Digital Agency
             </h1>
-            <p>Creative minds with technology experts</p>
+            <p class="mb-0">Creative minds with technology experts</p>
           </div>
         </div>
       </div>
@@ -36,9 +31,12 @@
 </header>
 <nav class="navbar navbar-expand-md navbar-light bg-white py-0">
   <div class="container">
-    <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div>
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="d-md-none ml-2">{{ pageTitle }}</span>
+    </div>
     <ul class="navbar-nav ml-auto d-flex d-md-none flex-row">
       <li class="nav-item nav-inline" *ngFor="let link of socialLinks">
         <a routerLink="{{ link.link }}" class="nav-link d-inline mx-1">
@@ -48,28 +46,35 @@
     </ul>
     <div
       id="navbarNav"
+      style="margin-left: -15px; margin-right: -15px;"
       [className]="
         showNavbar
-          ? 'collapse navbar-collapse show'
+          ? 'collapse navbar-collapse border-top border-grey pt-2 show'
           : 'collapse navbar-collapse'
       "
     >
-      <ul class="navbar-nav">
+      <ul class="navbar-nav px-3">
         <li
           class="nav-item"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
-          <a class="nav-link py-1" routerLink="/">What we do </a>
+          <a class="nav-link py-1" (click)="navigateTo('/')">What we do </a>
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link py-1" routerLink="/our-clients">Our clients</a>
+          <a class="nav-link py-1" (click)="navigateTo('/our-clients')"
+            >Our clients</a
+          >
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link py-1" routerLink="/who-are-we">Who we are</a>
+          <a class="nav-link py-1" (click)="navigateTo('/who-we-are')"
+            >Who we are</a
+          >
         </li>
         <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link py-1" routerLink="/contact-us">Contact us</a>
+          <a class="nav-link py-1" (click)="navigateTo('/contact-us')"
+            >Contact us</a
+          >
         </li>
       </ul>
       <ul class="navbar-nav ml-auto d-none d-md-flex">
